@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+
+# Local secrets & wrangler runtime
+.dev.vars
+.env
+.wrangler/
+
+# Personal taste profile (copy src/taste.example.md to src/taste.md)
+src/taste.md
+
+# Build output
+dist/
+
+# Editor / OS
+.DS_Store
+*.swp
+
+# Claude Code local settings & session memory (machine-specific / personal)
+.claude/
+.remember/
+.superpowers/
+
+# Test artifacts
+coverage/

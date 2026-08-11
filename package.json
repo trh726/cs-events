@@ -1,0 +1,27 @@
+{
+  "name": "cutie-spout-events",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "pretest": "test -f src/taste.md || cp src/taste.example.md src/taste.md",
+    "test": "vitest run",
+    "dev": "wrangler dev --test-scheduled",
+    "deploy": "wrangler deploy",
+    "bootstrap": "tsx scripts/get-refresh-token.ts",
+    "push-secrets": "bash scripts/push-secrets.sh"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.91.1",
+    "marked": "^18.0.2"
+  },
+  "devDependencies": {
+    "@cloudflare/vitest-pool-workers": "^0.15.0",
+    "@cloudflare/workers-types": "^4.20260426.1",
+    "@types/node": "^25.6.0",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.5",
+    "wrangler": "^4.85.0"
+  }
+}

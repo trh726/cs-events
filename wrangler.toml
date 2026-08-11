@@ -1,0 +1,16 @@
+name = "cutie-spout-events"
+main = "src/index.ts"
+compatibility_date = "2026-04-01"
+compatibility_flags = ["nodejs_compat"]
+
+[triggers]
+crons = ["0 14 * * 5"]
+
+[observability]
+enabled = true
+head_sampling_rate = 1
+
+[[rules]]
+type = "Text"
+globs = ["**/*.md"]
+fallthrough = true

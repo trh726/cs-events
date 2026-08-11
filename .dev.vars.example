@@ -1,0 +1,14 @@
+# Copy to .dev.vars and fill in. Never commit .dev.vars.
+# Push to Cloudflare with `npm run push-secrets`.
+
+ANTHROPIC_API_KEY=
+GOOGLE_CLIENT_ID=
+GOOGLE_CLIENT_SECRET=
+# Minted by `npm run bootstrap` (leave empty until then)
+GOOGLE_REFRESH_TOKEN=
+RECIPIENT_EMAIL=
+# Any long random string; guards /run?key=...
+TRIGGER_SECRET=
+RESEND_API_KEY=
+# Bare domain verified in Resend; sender becomes digest@<domain>
+FROM_EMAIL_DOMAIN=
